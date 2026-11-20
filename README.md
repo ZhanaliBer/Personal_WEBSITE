@@ -1,9 +1,11 @@
-# Personal WEBSITE
+# Personal website
 
-Персональная страница ZhanaliBer в стиле GitHub: тёмная палитра, README-блок, проекты и тонкие цветные дорожки. HTML и CSS, без зависимостей.
+Zhanali Berentayev's personal page, built with HTML and CSS. A GitHub-inspired dark layout with subtle, intermittent circuit traces along the panel borders. Reduced-motion preferences disable the animation.
 
-Откройте `index.html` в браузере. Тексты и ссылки редактируются в `index.html`, оформление — в `styles.css`.
+Open `index.html` in a browser. Edit content and links in `index.html`, and styling in `styles.css`.
 
-Описание основано на публичных названиях, описаниях и языках репозиториев https://github.com/The-Fabulous на 20 ноября 2026 года. Это краткая интерпретация направлений организации, а не подтверждение личного авторства или готовности продуктов.
+Project summaries are based on public repositories at https://github.com/The-Fabulous. The Telegram bot's main development is credited to Smatullayev Azamat, as specified by the site owner.
 
-Для GitHub Pages: Settings → Pages → Deploy from a branch → main → / (root).
+The displayed project name `secretbox_menux` links to the previously verified repository `secretbox_menus`.
+
+For GitHub Pages: Settings → Pages → Deploy from a branch → main → / (root).
