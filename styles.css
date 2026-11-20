@@ -6,9 +6,9 @@
 
 /* Fine circuit traces stay on the frame and light up only occasionally. */
 .circuit{position:relative;isolation:isolate;--trace:#3fb950;--delay:0s}
-.circuit::before,.circuit::after{content:"";position:absolute;inset:-1px;border:1px solid transparent;border-radius:inherit;pointer-events:none;opacity:0;animation:frame-pulse 14s ease-in-out infinite;animation-delay:var(--delay)}
-.circuit::before{border-top-color:var(--trace);border-right-color:var(--trace);clip-path:polygon(5% 0,68% 0,68% 2%,100% 2%,100% 45%,98% 45%,98% 3%,5% 3%);filter:drop-shadow(0 0 3px var(--trace))}
-.circuit::after{inset:3px;border-bottom-color:var(--trace);border-left-color:var(--trace);clip-path:polygon(0 55%,2% 55%,2% 97%,88% 97%,88% 100%,0 100%);filter:drop-shadow(0 0 4px var(--trace));animation-delay:calc(var(--delay) + 1s)}
+.circuit::before,.circuit::after{content:"";position:absolute;width:58px;height:30px;border:0 solid var(--trace);pointer-events:none;opacity:0;filter:drop-shadow(0 0 4px var(--trace));animation:frame-pulse 14s ease-in-out infinite;animation-delay:var(--delay)}
+.circuit::before{top:-1px;left:-1px;border-top-width:1px;border-left-width:1px;border-top-left-radius:6px}
+.circuit::after{bottom:-1px;right:-1px;border-bottom-width:1px;border-right-width:1px;border-bottom-right-radius:6px}
 .readme.circuit{overflow:visible}
 .readme .file-label{border-radius:5px 5px 0 0}
 .repos article:nth-child(1){--trace:#58a6ff;--delay:-3s}
@@ -20,3 +20,12 @@
 .credit strong{font-weight:500;color:var(--text)}
 @keyframes frame-pulse{0%,60%,100%{opacity:0}67%,80%{opacity:.8}88%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.circuit::before,.circuit::after{animation:none;opacity:.3}}
+
+.contact{margin-top:28px;padding:24px 28px;border:1px solid var(--border);border-radius:6px;--trace:#58a6ff;--delay:-6s}
+.contact h2{font-size:18px;margin:0 0 10px}
+.contact p{color:var(--muted);font-size:14px}
+.contact-list{margin:20px 0 0;display:grid;gap:14px}
+.contact-list div{display:grid;grid-template-columns:80px minmax(0,1fr);gap:12px}
+.contact-list dt{color:var(--muted);font-size:14px}
+.contact-list dd{margin:0;overflow-wrap:anywhere;font-size:14px}
+@media(max-width:480px){.contact{padding:18px}.contact-list div{grid-template-columns:1fr;gap:2px}}
