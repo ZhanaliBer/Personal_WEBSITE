@@ -3,71 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Персональный сайт-визитка: обо мне, мои навыки и контакты.">
-  <meta name="theme-color" content="#132b27">
-  <title>Ваше имя — личный сайт</title>
+  <meta name="description" content="ZhanaliBer — веб-разработка, эксперименты и проекты в The Fabulous.">
+  <meta name="theme-color" content="#0d1117">
+  <title>ZhanaliBer · Personal website</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">К содержимому</a>
-  <div class="page">
-    <header class="header">
-      <a class="brand" href="#home" aria-label="На главную">Ваше имя<span>.</span></a>
-      <nav aria-label="Основная навигация">
-        <a href="#about">Обо мне</a>
-        <a href="#skills">Навыки</a>
-        <a href="#contact">Контакты</a>
-      </nav>
-    </header>
-
+  <a class="skip" href="#main">К содержимому</a>
+  <header><div class="header-inner"><a class="brand" href="https://github.com/ZhanaliBer"><span class="code-mark">&lt;/&gt;</span> ZhanaliBer</a><nav aria-label="Навигация"><a href="#about">Обо мне</a><a href="#projects">Проекты</a><a href="https://github.com/The-Fabulous">The Fabulous</a></nav></div></header>
+  <div class="layout">
+    <aside class="profile">
+      <div class="avatar" aria-hidden="true">Z<span>_</span></div>
+      <h1>ZhanaliBer</h1><p class="handle">The Fabulous / developer</p>
+      <p>Пишу код, пробую идеи и превращаю их в веб-проекты.</p>
+      <a class="button" href="https://github.com/ZhanaliBer">Профиль на GitHub</a>
+      <a class="org" href="https://github.com/The-Fabulous"><span class="org-icon">F</span> The Fabulous</a>
+      <div class="stack"><span>JavaScript</span><span>HTML / CSS</span><span>Python</span></div>
+    </aside>
     <main id="main">
-      <section class="hero" id="home" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Личный сайт · Шаблон</p>
-          <h1 id="hero-title">Привет,<br>я <span>Ваше имя.</span></h1>
-          <p class="intro">Здесь начинается знакомство.</p>
-          <p class="description">Расскажите в двух предложениях, чем вы занимаетесь, что любите и какие идеи хотите воплотить.</p>
-          <a class="button" href="#contact">Давайте знакомиться</a>
-        </div>
-        <div class="portrait" role="img" aria-label="Место для вашей фотографии: абстрактный силуэт человека">
-          <span class="portrait-orbit"></span>
-          <span class="portrait-head"></span>
-          <span class="portrait-body"></span>
-          <span class="portrait-caption">Ваш следующий шаг начинается с вас.</span>
-        </div>
-      </section>
-
-      <section class="about section" id="about" aria-labelledby="about-title">
-        <p class="eyebrow">Немного о себе</p>
-        <div>
-          <h2 id="about-title">Человек за этим сайтом.</h2>
-          <p>Этот абзац — место для вашей истории. Расскажите о своём пути, интересах и том, что вдохновляет вас каждый день. Несколько искренних строк помогут узнать вас лучше.</p>
-          <p>Добавьте, над чем сейчас работаете или чему учитесь. Пусть здесь будет то, чем вам действительно хочется поделиться.</p>
+      <div class="tabs"><a class="active" href="#about">Overview</a><a href="#projects">Repositories</a></div>
+      <section class="readme" id="about" aria-labelledby="intro-title">
+        <div class="file-label">ZhanaliBer / README.md</div>
+        <div class="readme-content"><p class="muted mono">// hello, world</p><h2 id="intro-title">Привет, я ZhanaliBer<span class="cursor">_</span></h2>
+        <p>Мне интересны веб-разработка и эксперименты с цифровыми продуктами: от небольших утилит до социальных и образовательных проектов.</p>
+        <p>В моей организации <a href="https://github.com/The-Fabulous">The Fabulous</a> собраны разные направления: веб-меню, социальные приложения, инструменты для шифрования и идеи для обучения. Люблю пробовать, как идея может работать в коде.</p>
+        <div class="wiring" aria-hidden="true"><svg viewBox="0 0 800 150" preserveAspectRatio="none" fill="none" stroke-width="1">
+          <g stroke="#3fb950"><path d="M0 20H130L170 60H350L390 100H800"/><path d="M0 28H124L164 68H342L382 108H800"/><path d="M0 36H118L158 76H334L374 116H800"/><path d="M0 44H112L152 84H326L366 124H800"/></g>
+          <g stroke="#58a6ff"><path d="M0 100H230L280 50H500L540 10H800"/><path d="M0 108H234L284 58H504L544 18H800"/><path d="M0 116H238L288 66H508L548 26H800"/><path d="M0 124H242L292 74H512L552 34H800"/></g>
+          <g stroke="#f85149"><path d="M0 140H70L150 60H240L280 100H570L620 50H800"/><path d="M0 148H74L154 68H236L276 108H574L624 58H800"/><path d="M0 132H66L146 52H244L284 92H566L616 42H800"/></g>
+          <g stroke="#58a6ff"><circle cx="650" cy="18" r="3"/><circle cx="680" cy="26" r="3"/></g><g stroke="#3fb950"><circle cx="730" cy="108" r="3"/></g>
+        </svg></div>
+        <div class="notes"><span><i class="dot green"></i> Веб-приложения</span><span><i class="dot blue"></i> Полезные инструменты</span><span><i class="dot red"></i> Эксперименты</span></div>
         </div>
       </section>
-
-      <section class="section skills" id="skills" aria-labelledby="skills-title">
-        <p class="eyebrow">Что я умею</p>
-        <div>
-          <h2 id="skills-title">Мои сильные стороны.</h2>
-          <p>Замените примеры ниже своими навыками и интересами.</p>
-          <ul class="tags" aria-label="Примеры навыков">
-            <li>Дизайн</li><li>Разработка</li><li>Работа в команде</li><li>Новые идеи</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="contact" id="contact" aria-labelledby="contact-title">
-        <p class="eyebrow">На связи</p>
-        <h2 id="contact-title">Хорошие идеи начинаются<br>с простого «привет».</h2>
-        <p>Открыт к знакомствам, интересным проектам и новым возможностям.</p>
-        <!-- Замените example.com своим настоящим адресом. -->
-        <a class="email" href="mailto:hello@example.com">hello@example.com</a>
-        <p class="contact-note">Пример адреса — замените его своим.</p>
-      </section>
+      <section id="projects" aria-labelledby="projects-title"><div class="section-heading"><h2 id="projects-title">Проекты The Fabulous</h2><a href="https://github.com/The-Fabulous?tab=repositories">Все репозитории</a></div>
+      <div class="repos">
+        <article><a class="repo-name" href="https://github.com/The-Fabulous/secretbox_menus">secretbox_menus</a><p>Веб-меню: практичный формат для знакомства с ассортиментом.</p><span class="language"><i class="dot yellow"></i> JavaScript</span></article>
+        <article><a class="repo-name" href="https://github.com/The-Fabulous/Keep_In_Touch">Keep_In_Touch</a><p>Проект социальной платформы с амбицией собственного Instagram.</p><span class="language"><i class="dot yellow"></i> JavaScript</span></article>
+        <article><a class="repo-name" href="https://github.com/The-Fabulous/Govyadina">Govyadina</a><p>Персональный шифратор и пространство для дальнейших экспериментов.</p><span class="language"><i class="dot red"></i> HTML</span></article>
+        <article><a class="repo-name" href="https://github.com/The-Fabulous/ACEat">ACEat</a><p>Образовательный проект с идеей преподавателя для подготовки к SAT.</p><span class="language"><i class="dot yellow"></i> JavaScript</span></article>
+      </div><p class="source-note">Описание составлено по публичным репозиториям организации. Проекты могут находиться в разработке.</p></section>
+      <footer><span>Давайте знакомиться и создавать.</span><a href="https://github.com/ZhanaliBer">github.com/ZhanaliBer</a></footer>
     </main>
-
-    <footer><span>© Ваше имя</span><span>Сделано с вниманием к деталям.</span></footer>
   </div>
 </body>
 </html>
